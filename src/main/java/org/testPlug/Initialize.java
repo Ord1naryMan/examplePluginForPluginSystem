@@ -1,11 +1,9 @@
 package org.testPlug;
 
-import org.plugSys.core.events.TimeGetEvent;
-
 public class Initialize {
 
-    public static final String pluginName = "timePlugin";
+    public static final String pluginName = "testPlugin";
     public static void init() {
-        TimeGetEvent.register(new PluginTimeEventHandler());
+        System.out.println("Hello world");
     }
 }
